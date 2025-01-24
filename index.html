@@ -3,54 +3,52 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Young+Serif&display=swap"
-      rel="stylesheet"
-    />
+    
     <link
       rel="stylesheet"
       href="assets/favicon-32x32 (2).png"
-      type="image of newshome"
+      type="image-newshome"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
     />
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              grayishBlue: "hsl(236, 13%, 42%)",
+      tailwind.config={
+        theme:{
+          extend:{
+            colors:{
+              grayishBlue: "hsl(233, 8%, 79%)",
               softRed: "hsl(5, 85%, 63%)",
-              softOrange: "hsl(35%, 77%, 62%)",
+              softOrange: "hsl(35, 77%, 62%)",
               offWhite: "hsl(36, 100%, 99%)",
-              darkGrayishBlue: "hsl(263%,13%,42%)",
-              veryDarkBlue: "hsl(240%,100%,5%)",
+              darkGrayishBlue: "hsl(263,13%,42%)",
+              veryDarkBlue: "hsl(240,100%,5%)",
             },
-            fontFamily: {
-              Inter: ['"Inter", serif'],
-            },
-          },
-        },
-      };
+            fontfamily:{
+              Inter:['"Inter" ,serif'],
+            }
+          }
+        }
+      }
     </script>
-    <title>Newshome page</title>
+   <title>NEWS HOME PAGE</title>
   </head>
   <body class="font-Inter">
-    <!-- nav -->
-    <nav
-      class="container mx-auto p-[20px] lg:py-[58px] lg:px-[140px] flex justify-between items-center"
-    >
-      <!-- nav logo -->
+    <nav class="container mx-auto p-[20px] lg:py-[58px] lg:px-[140px] flex justify-between items-center">
       <div>
-        <img src="assets/logo (1).svg" alt="nav-logo" />
+        <img src="assets/logo (1).svg" alt="logo-image">
       </div>
       <ul class="hidden md:flex gap-12 font-[400] text-darkGrayishBlue">
-        <li class="hover:text-softRed cursor-pointer">Home</li>
-        <li class="hover:text-softRed cursor-pointer">New</li>
-        <li class="hover:text-softRed cursor-pointer">Popular</li>
-        <li class="hover:text-softRed cursor-pointer">Trending</li>
-        <li class="hover:text-softRed cursor-pointer">Categories</li>
+        <li class="hover:text-softRed cursor-pointer">home</li>
+        <li  class="hover:text-softRed cursor-pointer">New</li>
+        <li  class="hover:text-softRed cursor-pointer">Popular</li>
+        <li  class="hover:text-softRed cursor-pointer">Trending</li>
+        <li  class="hover:text-softRed cursor-pointer">Categories</li>
       </ul>
       <div class="md:hidden">
         <img src="assets/icon-menu.svg" alt="menu-icon" />
@@ -75,31 +73,56 @@
             />
           </div>
           <!-- div-2 -->
-          <div class="lg:grid grid-cols-2">
-            <h1 class="font-[800] text-[45px] leading-tight md:text-[50px] ">The Bright Future of Web 3.0?</h1>
+          <div class="lg:grid grid-cols-2 mb-8">
+            <h1 class="font-[800] py-5 text-[45px] leading-tight md:text-[50px] ">The Bright Future of Web 3.0?</h1>
             <div>
               <p class="  font-[400] md:py-[28px] text-darkGrayishBlue ">
                 We dive into the next evolution of web that claims to put the
                 power of the playforms back into the hands of the people. But is
                 it really fulfilling its promise?
               </p>
-              <button class="bg-softRed w-40 h-10 text-veryDarkBlue font-Inter font-[700] ">READ MORE</button>
+              <button class=" my-8 bg-softRed text-black p-6 hover:bg-veryDarkBlue  tracking-[6px] hover:text-offWhite font-[700] ">READ MORE</button>
             </div>
           </div>
         </section>
         <!-- section-2 -->
-        <section>
-          <div class="bg-black">
-            <h1 class="text-[#F3AA6D] font-Inter text-[30px] py-3 px-7">New</h1>
-            <h3 class="text-white pl-6 px-4 py-3 font-Inter text-[20px]">Hydrogen VS Electric Cars</h3>
-            <P class="text-offWhite pl-6 px-4">Will Hydrogen-fueled ever catch up to EVs?</P>
-            <h3 class="white pl-6 px-4">The Downsides of AI Artistry</h3>
-            <P class="text-offWhite pl-6 px-4">What are the possible adverse effects of on-demand AI image generation?</P>
-            <h1 class="text-white pl-6 px-4 " >Is VC Funding Drying Up?</h1>
-            <p class="text-offWhite pl-6 px-8">Private funding by VC Firms is down by 50% YDY. We take a look at what this means.</p>
+        <section class="bg-veryDarkBlue p-4 ">
+          <div>
+            <h1 class="text-softOrange font-[800] text-4xl pb-8">New</h1>
+            <h3 class="text-offWhite text-xl font-700 hover:text-softOrange cursor-pointer ">Hydrogen VS Electric Cars</h3>
+            <p class="text-grayishBlue border-b-2 py-4  text-[15px]">Will Hydrogen-fueled ever catch up to EVs?</p>
+            <h3 class="text-offWhite text-xl font-700 pt-6 hover:text-softOrange cursor-pointer">The Downsides of AI Artistry</h3>
+            <p class="text-grayishBlue border-b-2 py-4 pb-6 text-[15px]">What are the possible adverse effects of on-demand AI image generation?</p>
+            <h3 class="text-offWhite text-xl font-700 pt-6 hover:text-softOrange cursor-pointer">Is VC Funding Drying Up?</h3>
+            <p class="text-grayishBlue py-4 text-[15px]">Private funding by VC Firms is down by 50% YDY. We take a look at what this means.</p>
             </div>
+        </section>
+        <section class="grid grid cols-3 flex justify-between">
+          <div>
+            <img src="assets/image-retro-pcs.jpg" alt="image retro">
+            </div>
+            <div>
+            <h1>01</h1>
+            <h3>Reviving Retro PCs</h3>
+            <p>what happens when old Pcs are given modern upgrades?</p>
+          </div>
+          <div>
+            <img src="assets/image-top-laptops (1).jpg" alt="image of a top laptop">
+            </div>
+            <div>
+            <h1>02</h1>
+            <h3>Top 10 Laptops of 2022</h3>
+            <p>Our best picks for various needs and budgets.</p>
+          </div>
+          <div>
+            <img src="assets/image-gaming-growth.jpg" alt="gaming">
+            <h1>03</h1>
+            <h3>The Growth of Gaming</h3>
+            <P>How the pandemic has sparked fresh opportunities.</P>
+          </div>
         </section>
       </section>
     </main>
+
   </body>
 </html>
